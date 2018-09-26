@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.activity.driver.SearchPlaceActivity">
+
+
+    <!--title-->
+
+    <include
+        android:id="@+id/include_title_search_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_search_in_activity" />
+
+
+    <ListView
+        android:id="@+id/lv_tipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_title_search_place"
+        android:layout_marginTop="10dp"
+        ></ListView>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

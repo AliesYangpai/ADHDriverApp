@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:Star="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+
+
+    <!--上面-->
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/include_title_credit_score"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/iv_userHead"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/img_default_client_head_round"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="西瓜"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

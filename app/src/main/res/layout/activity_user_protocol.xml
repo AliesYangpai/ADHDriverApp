@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.ui.activity.driver.UserProtocolActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_user_protocol"
+        layout="@layout/common_title_in_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <WebView
+        android:id="@+id/wv_picAndDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

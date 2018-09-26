@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bg_all"
+tools:context="com.adhdriver.work.ui.activity.driver.VehiclesActivity">
+
+
+
+
+<!--title-->
+<include
+    android:id="@+id/include_title_vehicles_activity"
+    layout="@layout/title_bar_in_common_activity_right_img"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/selector_orange_right_angle_bg"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_add"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/add_new_vehicle"
+            />
+
+    </LinearLayout>
+
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/srefresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/include_title_vehicles_activity"
+    android:layout_above="@id/ll_bottom"
+    >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_vehicles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        />
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>
+
+

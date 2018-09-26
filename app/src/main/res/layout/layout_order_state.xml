@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/rg_5_state"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_take_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已接单"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+
+
+
+        <RadioButton
+            android:id="@+id/rb_take_goods_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="取货中"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+
+
+
+        <RadioButton
+            android:id="@+id/rb_ordering"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="进行中"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+
+
+
+        <RadioButton
+            android:id="@+id/rb_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已完成"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    tools:context="com.adhdriver.work.ui.activity.common.WelcomeActivity">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <!--<com.adhdriver.work.widget.CirclePageIndicator-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--xmlns:tools="http://schemas.android.com/tools"-->
+            <!--android:id="@+id/indicator"-->
+            <!--android:padding="10dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--app:radius="5dp"-->
+            <!--app:fillColor="@color/gray_order_state"-->
+            <!--app:pageColor="@color/white"-->
+            <!--app:strokeColor="@color/transparent"-->
+            <!--app:strokeWidth="2dp"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--/>-->
+
+
+
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+    <com.adhdriver.work.ui.widget.bottomSpot.CirclePageIndicator
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/blue_bottom_circle"
+        app:radius="5dp"
+        app:pageColor="@color/province_line_border"
+        app:fillColor="@color/white"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp"
+        android:layout_gravity="bottom"
+        />
+
+
+
+
+</LinearLayout>

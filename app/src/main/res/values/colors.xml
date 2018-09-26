@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="blue_bottom_circle">#68BCFF</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="text_login">#7c7c7c</color>
+    <color name="text_grays">#a9a9a9</color>
+    <color name="text_black">#333333</color>
+    <color name="text_bule">#68bcff</color>
+    <color name="bar_blue_bg">#008fff</color>
+
+
+
+    <color name="bg_all">#ecf0f2</color>
+
+
+    <color name="text_green">#8FD03E</color>
+    <color name="chiaro_blue">#b3ddff</color>
+
+
+    <color name="bar_blue">#0591ff</color>
+
+
+
+
+
+
+    <color name="multiple_image_select_primaryDark">#3d4b59</color>
+    <!--<color name="multiple_image_select_primaryDark">#008fff</color>-->
+
+    <!--按图通8888888888888888888888888888888888888888888888888888888888888888888888888-->
+
+    <color name="orange">#fd620e</color>
+
+    <!--MainActivit中底部按字体颜色变化-->
+    <color name="orangeOn">#ffc935</color>
+    <color name="grayOff">#929292</color>
+
+
+
+
+    <color name="gray_color">#9c9c9c</color>
+
+    <color name="gray_order_state">#929292</color>
+    <!--主页以及bar色号-->
+    <color name="background">#ffffff</color>
+    <!--<color name="titleBar">#ffc935</color>--> <!--以前的-->
+    <color name="titleBar">#c91e24</color>
+    <color name="welcome_bg">#8e1d20</color>
+    <color name="bottomBar">#ffffff</color>
+    <color name="barLine">#b2b2b2</color>
+    <color name="bgGray">#f5f5f5</color>
+    <color name="bgRed">#c91e24</color>
+    <color name="the_4_bg">#ffffff</color>
+    <color name="the_4_prd_bg">#ffffff</color>
+    <color name="mian_recommand">#ffffff</color>
+    <color name="item_white_bg_in_mine">#ffffff</color>
+    <color name="item_main_recommand">#ffffff</color>
+    <color name="refresh_item_bg">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_text">#1A1A1A</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="refresh_text_bg">#c9c9c9</color>
+    <color name="gray_bg">#f0eff5</color>
+    <color name="gray_btn">#EBEBEB</color>
+
+
+    <color name="rg_content_bg">#AA7507</color>
+
+    <!--分类中FragmentClassify-->
+    <color name="grid_item_bg">#ffffff</color>
+
+
+    <!--fragmentDetial-->
+    <color name="white">#ffffff</color>
+
+    <!--address界面-->
+    <color name="red">#ff0000</color>
+
+
+    <color name="province_line_border">#C7C7C7</color>
+
+    <color name="add_to_shop_car">#ff9402</color>
+    <color name="buy_right_now">#ff5000</color>
+    <color name="orange_deep">#ff5000</color>
+    <color name="orange_tint">#ff9402</color>
+
+
+    <color name="gray_line">#D4D3D7</color><!--灰色的线-->
+
+    <color name="floralwhite">#fffaf0</color><!--花白色 -->
+    <color name="slider_bg">#DBDBDB</color><!--策划背景的hoder-->
+
+
+    <color name="test_ssss">#1A000000</color><!--策划背景的hoder-->
+
+
+    <color name="gray_msg">#999999</color>
+
+
+
+
+
+
+
+
+
+
+
+    <color name="gold_one">#f2a90b</color><!--策划背景的hoder-->
+
+    <color name="gold_normal">#f68623</color>
+    <color name="gold_click">#ed7000</color>
+    <color name="blue_one">#008fff</color>
+
+    <color name="gray_one">#b9b9bd</color>
+
+    <color name="gray_deep_one">#3b3b3b</color>
+    <color name="blue_normal_one">#5d8ce9</color>
+
+    <color name="green_one">#0dc199</color>
+
+
+
+    <color name="gray_main_above">#26313d</color>
+
+
+
+    <color name="gray_main_above_title">#3d4b59</color>
+    <color name="gray1">#3d4b59</color>
+
+    <color name="gray2">#191f26</color>
+    <color name="gray3">#474c51</color>
+
+    <color name="gray4">#465462</color>
+
+    <color name="gray5">#3a4149</color>
+    <color name="gray6">#949494</color>
+
+
+    <color name="gray7">#515151</color>
+    <color name="gray8">#26313d</color>
+    <color name="grayline1">#EAEAEA</color>
+    <color name="orange1">#fb6f12</color>
+    <color name="orange2">#e67510</color>
+    <color name="brown1">#dbbb6b</color>
+
+    <color name="red1">#FF4646</color>
+    <color name="unable_bidding">#cccccc</color>
+    <color name="normal_bidding">#fb6f12</color>
+    <color name="press_bidding">#f58236</color>
+
+    <color name="passed_point_color">#029dd5</color>
+
+    <color name="normal_point_color">#cdcbcc</color>
+    <color name="red2">#FF1212</color>
+    <!--按图通8888888888888888888888888888888888888888888888888888888888888888888888888-->
+
+
+</resources>

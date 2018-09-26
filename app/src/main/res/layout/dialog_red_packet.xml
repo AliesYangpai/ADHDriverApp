@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    
+        <RelativeLayout
+
+            android:id="@+id/rl_red_packet_big_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="380dp"
+            android:background="@drawable/img_rp_carve_bg"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+            <!--瓜分相关-->
+
+            <RelativeLayout
+                android:id="@+id/rl_carve_up_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_carve_up_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/img_rp_carve_content"
+                    android:layout_marginTop="60dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+
+                    >
+
+
+                    <!--奖金池-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <TextView
+
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text= "奖金池剩余："
+                            android:textColor="@color/rg_content_bg"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_jackpot_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text= "79552元"
+                            android:textColor="@color/rg_content_bg"
+
+                            />
+
+                    </LinearLayout>
+                    <!--已领奖人数-->
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <TextView
+
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text= "已领奖人数："
+                            android:textColor="@color/rg_content_bg"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_award_person"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text= "5466人"
+                            android:textColor="@color/rg_content_bg"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+            <!--红包袋相关-->
+            <RelativeLayout
+                android:id="@+id/rl_rp_show_packet_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"
+                >
+
+
+                <ImageView
+                    android:id="@+id/iv_rp_packet"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/img_rp_show_packet"
+                    android:layout_marginTop="100dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+            <!--底部按钮-->
+
+            <!--立即瓜分-->
+            <TextView
+                android:id="@+id/tv_start_carve_up"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/img_rp_carve_up"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+
+                />
+
+
+
+            <!--立即查看-->
+            <TextView
+                android:id="@+id/tv_start_to_check"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/img_rp_show"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

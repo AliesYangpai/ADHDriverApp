@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adhdriver.work.activity.driver.MapMarkActivity"
+    android:background="@color/bg_all"
+    android:orientation="vertical"
+    >
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"/>
+
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.activity.driver.ChangeDetailListActivity">
+
+
+
+    <!--title-->
+
+    <include
+        android:id="@+id/include_title_change_detial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity" />
+
+
+
+
+    <com.adhdriver.work.widget.pullfresh.PullToRefreshLayout
+        android:id="@+id/refresh_Layout_change_detial_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title_change_detial"
+
+        >
+
+        <include
+            android:id="@+id/include_refresh_head"
+            layout="@layout/refresh_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+
+        <com.adhdriver.work.widget.pullfresh.PullableListViewUpAndDown
+            android:id="@+id/lv_change_detials"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+
+
+            />
+
+        <!--<com.adhdriver.work.widget.pullfresh.PullableListViewUpAndDown-->
+            <!--android:id="@+id/lv_change_detials"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:divider="@color/bg_all"-->
+            <!--android:dividerHeight="10dp"-->
+            <!--android:scrollbars="none"-->
+
+            <!--/>-->
+
+        <include layout="@layout/load_more" />
+
+    </com.adhdriver.work.widget.pullfresh.PullToRefreshLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_arrive_and_pay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/tv_arrived"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="我已到达"
+            android:textSize="15sp"
+            android:background="@drawable/login_bg_change"
+            android:textColor="@color/white"
+
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_pay_to_me"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="向我付款"
+            android:textSize="15sp"
+            android:background="@drawable/login_bg_change"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_had_pay_to_send_code"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="用户已支付，发码确认"
+            android:textSize="15sp"
+            android:background="@drawable/login_bg_change"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_office_had_arrive"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/office_order_arrive"
+            android:textSize="15sp"
+            android:textColor="@color/red"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

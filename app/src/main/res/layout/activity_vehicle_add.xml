@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.activity.driver.VehicleAddActivity">
+
+
+
+    <!--title-->
+
+    <include
+        android:id="@+id/include_title_my_driver_vehicle_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity" />
+
+
+
+
+    <ScrollView
+        android:id="@+id/sv_info_reg_common"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/include_title_my_driver_vehicle_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+
+            <!--车辆文字属性-->
+
+            <include
+                android:id="@+id/include_my_driver_vehicle_detial_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_vehicle_text_info_add"
+                />
+
+
+
+
+            <include
+                android:id="@+id/include_my_driver_vehicle_detial_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_vehicle_pic_info"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

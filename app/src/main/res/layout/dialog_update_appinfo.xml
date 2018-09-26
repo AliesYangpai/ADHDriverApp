@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@drawable/img_update_bg"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+
+            >
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/img_updat_rocket"
+            />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/app_update"
+                android:textSize="16sp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_update_info_text"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/test_appUpdate"
+                    android:lineSpacingExtra = "5dp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_all"
+        android:paddingTop="0.2dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel_update"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/cancel"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/text_bule"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_sure_update"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/sure"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/text_bule"
+            android:layout_marginLeft="0.5dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

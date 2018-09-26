@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.ui.activity.driver.MyWalletActivity">
+
+
+    <!--<include-->
+        <!--android:id="@+id/include_mywallet_title"-->
+        <!--layout="@layout/title_bar_in_common_activity_right_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srefresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <include
+                android:id="@+id/include_mywallet_title"
+                layout="@layout/title_bar_in_common_activity_right_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_balance_info"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:background="@color/gray1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bg_all"
+                    android:text="@string/wallet_balance"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/tv_my_change"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="0.00"
+                    android:gravity="center_vertical"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    />
+
+
+            </LinearLayout>
+
+
+            <!--提现账户变更-->
+            <RelativeLayout
+                android:id="@+id/rl_change_deposit_account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_change_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_deposit_change_account_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_change_account"
+                    android:text="@string/change_deposit_account"
+                    android:textColor="@color/gray3"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <!--充值-->
+                <RelativeLayout
+                    android:id="@+id/rl_recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_recharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_recharge_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_recharge"
+                        android:text="@string/top_up_recharge"
+                        android:textColor="@color/gray3"/>
+
+
+
+
+                </RelativeLayout>
+
+
+                <!--分割线-->
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/bg_all"
+
+                    />
+
+                <!--提现-->
+                <RelativeLayout
+                    android:id="@+id/rl_deposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:layout_below="@id/line1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_deposit_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_user_protocol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:text="@string/withdraw_deposit"
+                        android:textColor="@color/gray3"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_deposit"
+                        android:layout_marginStart="11dp" />
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

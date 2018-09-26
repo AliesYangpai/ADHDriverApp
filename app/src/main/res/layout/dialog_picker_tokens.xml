@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_dialog_deny"
+        android:orientation="vertical"
+        android:padding="2dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/tv_piker_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="请选择车型"
+            android:textColor="@color/text_bule"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <ListView
+            android:id="@+id/lv_tokens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/insert_tokens_lv_bg"
+            android:dividerHeight="0.5dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

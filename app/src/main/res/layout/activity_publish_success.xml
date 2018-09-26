@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bg_all"
+tools:context="com.adhdriver.work.ui.activity.driver.PublishSuccessActivity">
+
+
+
+<!--title-->
+
+<include
+    android:id="@+id/include_title_publish_success"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/common_title_in_activity" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_below="@id/include_title_publish_success"
+    android:layout_marginTop="50dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:background="@drawable/img_publish_success"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布成功"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/publish_success_content"
+        android:textColor="@color/text_login"
+
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        />
+</LinearLayout>
+
+
+
+
+<!--点击下一步-->
+
+
+<TextView
+    android:id="@+id/tv_publish_success"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:text="@string/go_to_show_list"
+    android:textSize="15sp"
+    android:textColor="@color/white"
+    android:background="@drawable/selectot_blue_drawable_click"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    />
+
+
+
+
+</RelativeLayout>
+

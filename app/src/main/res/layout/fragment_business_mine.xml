@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.fragment.driver.main4.FragmentDriverMine">
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/sv_user_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+
+
+
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            >
+
+            <!--头部-->
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/img_personalbg"
+                android:orientation="vertical"
+                >
+
+
+                <!--喇叭按钮-->
+                <RelativeLayout
+                    android:id="@+id/rl_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    >
+                <ImageView
+                    android:id="@+id/iv_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/img_notification"
+                    />
+
+                </RelativeLayout>
+
+
+                <!--中间文字区域-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_userHead"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/img_head"
+                        />
+                    <TextView
+                        android:id="@+id/tv_userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center"
+                        android:text="王先生"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/tv_userNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="18115263549"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <!--钱包、优惠券、积分-->
+            <include
+                android:id="@+id/include_mine_head3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_mine_head_3"
+                android:layout_below="@+id/rl_head"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <!--邀请好友-->
+            <include
+                android:id="@+id/include_mine_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/include_mine_head3"
+                android:layout_marginTop = "15dp"
+                layout="@layout/layout_mine_bisiness_line_1"
+                />
+
+            <!--收费标准，用户中心，客户协议-->
+
+            <include
+                android:id="@+id/include_mine_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop = "15dp"
+                layout="@layout/layout_mine_line_2"
+                android:layout_below="@+id/include_mine_line_1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <!--消息，设置-->
+
+            <include
+                android:id="@+id/include_mine_line_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/include_mine_line_2"
+                android:layout_marginTop = "15dp"
+                layout="@layout/layout_mine_line_3"
+                />
+            
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

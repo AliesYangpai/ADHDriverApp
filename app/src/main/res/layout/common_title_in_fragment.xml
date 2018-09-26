@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/bar_blue_bg"
+
+        >
+
+
+        <!--左-->
+
+        <ImageView
+            android:id="@+id/iv_common_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/img_back"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+
+
+        <!--中-->
+        <TextView
+            android:id="@+id/tv_common_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱带货"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+
+
+        <!--右-->
+        <ImageView
+            android:id="@+id/iv_common_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:visibility="gone"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_top_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:background="@color/text_bule"-->
+
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_common_back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/img_back"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_common_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="爱带货"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--/>-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/iv_common_search"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_common_search"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="12dp"-->
+            <!--android:src="@drawable/img_change_detial"-->
+            <!--android:visibility="visible"-->
+            <!--/>-->
+        <!---->
+        <!---->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

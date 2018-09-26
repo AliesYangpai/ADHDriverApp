@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <com.xyz.step.FlowViewVertical
+            android:id="@+id/fvl_pass_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_time_about"
+            android:paddingBottom="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            app:v_bgPositionX="7dp"
+            app:v_bg_color="@color/passed_point_color"
+            app:v_bg_radius="3dp"
+            app:v_bg_width="2dp"
+            app:v_interval="40dp"
+            app:v_pro_color="@color/normal_point_color"
+            app:v_pro_radius="3dp"
+            app:v_pro_width="2dp"
+            app:v_textMoveTop="7dp"
+            app:v_textsize="14dp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

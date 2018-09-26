@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    android:orientation="vertical"
+    tools:context="com.adhdriver.work.activity.driver.ThirdBindInAppActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_thirdbind_activity"
+        layout="@layout/common_title_in_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_third_bind_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_title_thirdbind_activity"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <!--版本信息-->
+        <RelativeLayout
+            android:id="@+id/rl_wx_bind"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_wx_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_third_bind_wx" />
+
+            <TextView
+                android:id="@+id/tv_wx_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_wx_bind"
+                android:text="微信"
+                android:textColor="@color/text_login" />
+
+
+
+
+            <TextView
+                android:id="@+id/tv_is_wx_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_login"
+                android:text="未绑定"
+                android:gravity="center"
+                />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_arrows1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/img_back" />-->
+
+
+        </RelativeLayout>
+
+
+        <!--分割线-->
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/rl_version_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/bg_all"
+
+            />
+
+        <!--意见反馈-->
+        <RelativeLayout
+            android:id="@+id/rl_qq_bind"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/line1"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_qq_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_third_bind_qq" />
+
+            <TextView
+                android:id="@+id/tv_qq_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_toRightOf="@id/iv_qq_bind"
+                android:text="QQ"
+                android:textColor="@color/text_login" />
+
+
+
+            <TextView
+                android:id="@+id/tv_is_qq_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_login"
+                android:text="未绑定"
+                android:gravity="center"
+                />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_arrows2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/img_back" />-->
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

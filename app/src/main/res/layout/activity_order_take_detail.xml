@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.ui.activity.driver.OrderTakeDetailActivity">
+
+
+    <!--<include-->
+    <!--android:id="@+id/include_title_order_take"-->
+    <!--layout="@layout/title_bar_in_order_take"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+    <View
+        android:id="@+id/view_line_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/blue_one"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/include_title_order_take"
+        layout="@layout/title_bar_in_order_take"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <com.amap.api.navi.AMapNaviView
+        android:id="@+id/navi_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_title_order_take"
+        >
+
+
+
+
+    </com.amap.api.navi.AMapNaviView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <CheckBox
+            android:id="@+id/cb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_map_bg"
+            android:button="@null"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

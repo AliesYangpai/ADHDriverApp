@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.fragment.driver.takeorder.FragmentOrdering">
+
+    <!--下拉刷新布局-->
+    <com.adhdriver.work.widget.pullfresh.PullToRefreshLayout
+        android:id="@+id/refresh_Layout_in_ordering"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <include
+            android:id="@+id/include_refresh_head"
+            layout="@layout/refresh_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <com.adhdriver.work.widget.pullfresh.PullableListViewUpAndDown
+            android:id="@+id/lv_ordering"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@null"
+            />
+
+        <!--<com.adhdriver.work.widget.pullfresh.PullableListViewUpAndDown-->
+            <!--android:id="@+id/lv_ordering"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:divider="@color/bg_all"-->
+            <!--android:dividerHeight="10dp"-->
+            <!--/>-->
+
+        <include layout="@layout/load_more" />
+
+    </com.adhdriver.work.widget.pullfresh.PullToRefreshLayout>
+
+</RelativeLayout>

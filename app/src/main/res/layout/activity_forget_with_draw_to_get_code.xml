@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.activity.driver.ForgetWithDrawToGetCodeActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_forget_with_draw_pass"
+        layout="@layout/common_title_in_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--上面-->
+    <LinearLayout
+        android:id="@+id/rl_phone_about"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/include_title_forget_with_draw_pass"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已发送验证码到您的手机"
+            android:textColor="@color/text_login"
+            android:textSize="16sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_phone_in_forget_paypass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="151****6488"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+
+            />
+
+    </LinearLayout>
+
+
+    <!--下面-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_confirm_code_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_phone_about"
+        android:paddingBottom="20dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/tv_sure_the_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+
+            android:background="@drawable/login_bg_change"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:text="@string/text_next"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+
+            />
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_get_confirm_code_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <com.jungly.gridpasswordview.GridPasswordView
+                android:id="@+id/gpv_set_withdraw_pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:gpvGridColor="#ECF0F2"
+                app:gpvLineColor="#ECF0F2"
+                app:gpvPasswordLength="6"
+                app:gpvPasswordType="numberPassword"
+                app:gpvTextColor="#000000"
+                app:gpvTextSize="25sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/pass_code_line1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:background="#BFBFBF" />
+
+                <View
+                    android:id="@+id/pass_code_line2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:background="#BFBFBF" />
+
+                <View
+                    android:id="@+id/pass_code_line3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:background="#BFBFBF" />
+
+                <View
+                    android:id="@+id/pass_code_line4"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:background="#BFBFBF" />
+
+                <View
+                    android:id="@+id/pass_code_line5"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:background="#BFBFBF" />
+
+                <View
+                    android:id="@+id/pass_code_line6"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="#BFBFBF" />
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="收不到验证码？重新获取"
+                android:textColor="@color/text_login"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

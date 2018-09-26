@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_main_above"
+    tools:context="com.adhdriver.work.ui.activity.driver.OrderTakeActivity">
+
+
+
+
+        <!--title-->
+        <include
+            android:id="@+id/include_title_order_take_activity"
+            layout="@layout/title_bar_in_common_activity_right_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srefresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/include_title_order_take_activity">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_order_take"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                />
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.fragment.driver.main4.FragmentDriverOrders"
+    >
+
+
+
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_fg_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_fragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/ll_all_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/include_title_fg_orders"
+        android:background="@drawable/img_orders_fg_bg"
+        android:visibility="visible"
+        >
+
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                >
+
+                <TextView
+                    android:id="@+id/tv_my_appoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_orders_tv_bg"
+                    android:layout_weight="1"
+                    android:text="我的指派"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_my_grab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_orders_tv_bg"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:text="司机抢单"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/tv_my_bidding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_orders_tv_bg"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:text="司机竞价"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

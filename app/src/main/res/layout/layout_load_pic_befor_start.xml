@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <LinearLayout
+
+        android:id="@+id/ll_load_pic_befor_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bg_all"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <!--出发传照-->
+
+        <TextView
+            android:id="@+id/tv_start_to_upload_pic_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="出发照片"
+            android:textColor="@color/text_login"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textSize="15sp"
+
+            />
+
+        <!--上传图片-->
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_load_pic_befor_go_1"
+                    android:layout_width="200dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:maxWidth="90dp"
+                    android:maxHeight="90dp"
+                    android:src="@drawable/img_upload_bg"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="车前"
+                    android:textColor="@color/text_login"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_load_pic_befor_go_2"
+                    android:layout_width="200dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:maxWidth="90dp"
+                    android:maxHeight="90dp"
+                    android:src="@drawable/img_upload_bg"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="车侧"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_login"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_load_pic_befor_go_3"
+                    android:layout_width="200dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:maxWidth="90dp"
+                    android:maxHeight="90dp"
+                    android:src="@drawable/img_upload_bg"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="车后"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_login"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_load_pic_befor_go_1"-->
+            <!--android:layout_width="194dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/img_upload_bg"-->
+            <!--/>-->
+
+        <!--&lt;!&ndash;上传图片&ndash;&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_load_pic_befor_go_2"-->
+            <!--android:layout_width="194dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/img_upload_bg"-->
+            <!--/>-->
+
+        <!--&lt;!&ndash;上传图片&ndash;&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_load_pic_befor_go_3"-->
+            <!--android:layout_width="194dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/img_upload_bg"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--/>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+
+    <!--&gt;-->
+
+
+    <!--<LinearLayout-->
+
+        <!--android:id="@+id/ll_load_pic_befor_go"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!---->
+        <!--&gt;-->
+
+
+        <!--&lt;!&ndash;额外服务&ndash;&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_extral_text"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+
+            <!--android:text="出发照片"-->
+            <!--android:textColor="@color/text_login"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:background="@color/white"-->
+            <!--/>-->
+
+        <!--&lt;!&ndash;上传图片&ndash;&gt;-->
+
+          <!--<ImageView-->
+              <!--android:id="@+id/iv_load_pic_befor_go_1"-->
+              <!--android:layout_width="194dp"-->
+              <!--android:layout_height="120dp"-->
+              <!--android:layout_gravity="center_horizontal"-->
+              <!--android:scaleType="fitXY"-->
+              <!--android:layout_marginTop="10dp"-->
+              <!--android:src="@drawable/img_upload_bg"-->
+              <!--/>-->
+
+        <!--&lt;!&ndash;上传图片&ndash;&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_load_pic_befor_go_2"-->
+            <!--android:layout_width="194dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/img_upload_bg"-->
+            <!--/>-->
+
+        <!--&lt;!&ndash;上传图片&ndash;&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_load_pic_befor_go_3"-->
+            <!--android:layout_width="194dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/img_upload_bg"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+<!--</LinearLayout>-->

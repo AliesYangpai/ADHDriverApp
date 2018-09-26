@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.activity.driver.PublishScatteredActivity">
+
+
+    <!--title-->
+
+    <include
+        android:id="@+id/include_title_scattered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_scattered_weight"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/include_title_scattered"
+        android:visibility="gone"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_scattered_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="重量(kg)："
+
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/et_scattered_weight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_scattered_weight"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入剩余重量"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_grays"
+            android:textSize="15sp"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_scattered_lenth"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/rl_scattered_weight"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_scattered_lenth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="长度(m)："
+
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/et_scattered_lenth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_scattered_lenth"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="货物长度"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_grays"
+            android:textSize="15sp"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_scattered_width"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/rl_scattered_lenth"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_scattered_width"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="宽度(m)："
+
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:id="@+id/et_scattered_width"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_scattered_width"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="货物宽度"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_grays"
+            android:textSize="15sp"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_scattered_height"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/rl_scattered_width"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_scattered_heigh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="高度(m)："
+
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/et_scattered_height"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_scattered_heigh"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="货物高度"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_grays"
+            android:textSize="15sp"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_goods_weight_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="30dp"
+        >
+
+
+        <TextView
+
+            android:id="@+id/tv_weight_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="确认"
+            android:textSize="15sp"
+            android:background="@drawable/login_bg_change"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

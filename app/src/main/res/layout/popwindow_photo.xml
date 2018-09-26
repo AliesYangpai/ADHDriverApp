@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/select_pic"
+            android:gravity="center"
+            android:textColor="@color/text_grays"
+            android:background="@color/white"
+            />
+
+        <!--拍照-->
+        <RelativeLayout
+            android:id="@+id/rl_camera"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/tv_camera"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="@string/tx_camera_text"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+        <!--相册-->
+        <RelativeLayout
+            android:id="@+id/rl_gallary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:layout_marginTop="0.5dp"
+
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/tv_gallary"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="@string/tx_gallary"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_photo_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/tx_cancel"
+            android:gravity="center"
+            android:textColor="@color/text_grays"
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

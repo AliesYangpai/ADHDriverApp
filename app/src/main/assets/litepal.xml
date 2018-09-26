@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="AiDaiHuoDriver.db"></dbname>  <!--数据库名称-->
+
+    <version value="8"></version>  <!--数据库版本号-->
+    <!--20170606修改了登陆返回的实体类，因此版本号由 1变为2 -->
+    <!--20170706加入了OssConfig实体类，因此版本号由 2变为3(未上线) -->
+    <!--20170707修改了wallet实体类，因此版本号由 3变为4(未上线) -->
+    <!--201707012【今日上线】因此版本号由 2变为3 -->
+    <!--201708014【上线】版本号不变仍旧为3 -->
+    <!--20170831 开发企业功能，因此将3变为4（本版本上线时，需要将当前的3改为4）（如果你看到了4那就说明我提前改变了数据库版本号，）-->
+    <!--20171009 setLocation功能变更，因此将4变为5（本版本上线时，需要将当前的4改为5）（如果你看到了5那就说明我提前改变了数据库版本号，）-->
+    <!--20171107 User实体类将加入省市区Id，因此将5变为6（本版本上线时，需要将当前的5改为6）（如果你看到了6那就说明我提前改变了数据库版本号，）-->
+
+
+    <!--20171212 将LogonVehicle类设置为本地数据库表，因此将6变为7（本版本上线时，需要将当前的6改为7）（如果你看到了7那就说明我提前改变了数据库版本号，）-->
+    <!--list,为表的结构-->
+
+
+    <!--20180131 将Driver中加入cridit 本版本上线时，需要将当前的7改为8）（如果你看到了8那就说明我提前改变了数据库版本号，）-->
+    <!--list,为表的结构-->
+
+
+    <list>
+        <mapping class="com.adhdriver.work.entity.User"></mapping>
+        <mapping class="com.adhdriver.work.entity.driver.Driver"></mapping>
+
+
+
+        <mapping class="com.adhdriver.work.entity.OssConfig"></mapping>
+
+        <mapping class="com.adhdriver.work.entity.driver.vehicle.LogonVehicle"></mapping>
+    </list>
+</litepal>

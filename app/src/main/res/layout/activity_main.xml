@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@color/bg_all"
+    tools:context=".activity.driver.MainActivity">
+
+
+
+
+
+
+    <!--********************************第一版本开始************************************-->
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+
+        <com.ashokvarma.bottomnavigation.BottomNavigationBar
+
+            android:id="@+id/bottom_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <View
+    android:id="@+id/view_bottom_line"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/bg_all"
+    android:layout_above="@id/ll_bottom"
+    />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view_bottom_line"
+        />
+
+
+
+
+
+    <!--********************************第一版本结束************************************-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--*********************************原先版本之后还原*******************-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+
+        <!--&gt;-->
+
+        <!--<com.ashokvarma.bottomnavigation.BottomNavigationBar-->
+
+            <!--android:id="@+id/bottom_navigation_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+
+
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+    <!--<View-->
+    <!--android:id="@+id/view_bottom_line"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/bg_all"-->
+    <!--android:layout_above="@id/ll_bottom"-->
+    <!--/>-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fragment_container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@id/view_bottom_line"-->
+    <!--/>-->
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_center_issue"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/img_send_state" />-->
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

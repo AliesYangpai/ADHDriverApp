@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        >
+
+
+        <!--左-->
+
+        <ImageView
+            android:id="@+id/iv_common_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/img_back_pop_top"
+            />
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+
+            
+            
+            <ImageView
+                android:id="@+id/iv_client_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_default_client_head_round"
+                />
+            <!--中-->
+            <TextView
+                android:id="@+id/tv_client_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="桑切斯"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/orange2"
+                android:layout_marginTop="3dp"
+                />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

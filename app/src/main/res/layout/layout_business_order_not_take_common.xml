@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_order_not_take_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_all"
+        android:orientation="vertical"
+
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_order_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <!--订单编号-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="订单编号:"
+                    android:textColor="@color/orange"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/orange"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <!--订单编号-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_order_no"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp">-->
+
+
+            <!--&lt;!&ndash;订单编号&ndash;&gt;-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="订单编号:"-->
+                <!--android:textColor="@color/orange"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_order_num"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="..."-->
+                <!--android:textColor="@color/orange"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textStyle="bold"-->
+
+                <!--/>-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <!--货运类型-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="货运类型"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_car_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+
+
+            <!--用车时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="用车时间"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_car_use_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+            <!--货物名称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="货物名称"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+
+            <!--发货人-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="发货人"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_shipper_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+
+            <!--发货地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="发货地址"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_shipper_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+
+            <!--收货人-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="收货人"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_receiver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+
+
+            <!--收货地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="收货地址"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_receiver_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+
+            <!--载重量-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="货物重量"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_goods_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+
+            <!--货物体积-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="货物体积"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_goods_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+
+            <!--可得收益,注意该选项在竞价时候需要被隐藏-->
+            <LinearLayout
+                android:id="@+id/ll_freight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="可得收益"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_freight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/orange"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_all" />
+
+
+            <!--给司机捎句话-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:text="备注"
+                    android:textColor="@color/black_text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="..."
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_order_not_take_common"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingBottom="20dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp">-->
+
+
+        <!--&lt;!&ndash;货物名称xxxxxx&ndash;&gt;-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--&lt;!&ndash;订单编号&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="订单编号"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_order_num"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="2015112236e563"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--&lt;!&ndash;用车时间&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="用车时间"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_car_use_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="14:20"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--&lt;!&ndash;货运类型&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="货运类型"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_car_type"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="顺风车"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--&lt;!&ndash;货物名称&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="货物名称"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_goods_name"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="好多台电视机"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--&lt;!&ndash;始发地&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="始发地"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_start_place"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="西安"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--&lt;!&ndash;目的地&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="目的地"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_destination"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="咸阳"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--&lt;!&ndash;载重量&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="载重量"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_goods_weight"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="1000kg/m³"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--&lt;!&ndash;运费&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="运费"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_freight"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="8000元"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--&lt;!&ndash;备注&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="备注"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_remark"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="奥斯卡等级阿里是看得见肯德基爱上了肯德基拉上看到"-->
+                    <!--android:textColor="@color/grayOff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

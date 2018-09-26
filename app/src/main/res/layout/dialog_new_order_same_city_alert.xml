@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/boder_white_radius_bg"
+        android:orientation="vertical"
+
+        >
+
+
+        <!--上-->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/boder_orang_top_radius_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/distance"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2.5公里"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/today"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_push_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="18:20:23"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--中-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            >
+
+
+            <!--起点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+
+                >
+
+
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/img_start_spot"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_start_place_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="大唐西市"
+                        android:textColor="@color/black_text"
+                        android:textSize="23sp"
+                        android:singleLine="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_start_place_detial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="陕西省西安市莲湖区草阳村十字向南100m路西"
+                        android:textColor="@color/text_login"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/iv_omit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_hide_pass_point"
+                android:visibility="visible"
+                />
+
+
+            <!--终点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+
+                >
+
+
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/img_destination_spot"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_destination_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="大唐西市"
+                        android:textColor="@color/black_text"
+                        android:textSize="23sp"
+                        android:singleLine="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_destination_detial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="陕西省西安市莲湖区草阳村十字向南100m路西"
+                        android:textColor="@color/text_login"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--下-->
+
+
+        <!--<CircleTextProgressbar-->
+            <!--android:id="@+id/cpb_time_count_take"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginBottom="40dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="5"-->
+            <!--android:textSize="30sp"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+
+
+        <com.adhdriver.work.ui.widget.dialog.swipedialog.process.CountDownProgress
+            android:id="@+id/cdp_time_count_take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="5"
+            android:padding="20dp"
+            />
+
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>

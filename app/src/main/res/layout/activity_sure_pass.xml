@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adhdriver.work.activity.SurePassActivity"
+    android:background="@color/bg_all"
+    android:orientation="vertical"
+    >
+
+
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_sure_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <!--输入新密码-->
+        <RelativeLayout
+            android:id="@+id/rl_new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+
+            <EditText
+                android:id="@+id/et_new_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_new_pass"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_login"
+                android:textColorHint="@color/text_grays"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/iv_phone"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:digits="@string/pass_digest"
+
+
+                />
+
+
+        </RelativeLayout>
+
+        <!--分割线-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/bg_all" />
+
+        <!--再次输入密码-->
+        <RelativeLayout
+            android:id="@+id/rl_new_pass_again"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+
+            <EditText
+                android:id="@+id/et_new_pass_again"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_new_pass_again"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_login"
+                android:textColorHint="@color/text_grays"
+                android:textSize="15sp"
+                android:inputType="textPassword"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_confirm_code"
+                android:maxLength="20"
+                android:digits="@string/pass_digest"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--点击下一步-->
+    <LinearLayout
+        android:id="@+id/ll_find_pass_finish"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_bg_change"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/text_finish"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

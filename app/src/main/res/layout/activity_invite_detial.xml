@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.activity.driver.InviteDetialActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_invite_detial_activity"
+        layout="@layout/common_title_in_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title_invite_detial_activity"
+        >
+
+
+        <include
+            android:id="@+id/include_business_driver_head_about"
+            layout="@layout/layout_business_driver_head_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--司机姓名相关-->
+
+        <LinearLayout
+            android:id="@+id/ll_business_info_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/include_business_driver_head_about"
+            android:background="@color/bg_all"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <!--联系电话-->
+                <LinearLayout
+                    android:id="@+id/ll_business_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="联系电话"
+                        android:textColor="@color/black_text"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_business_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="50dp"
+                        android:text="..."
+                        android:textColor="@color/text_bule"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_contact_driver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/gray_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/bg_all" />
+
+
+                <!--企业地址-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="联系地址"
+                        android:textColor="@color/black_text"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_business_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:text="..."
+                        android:textColor="@color/gray_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/bg_all" />
+
+
+                <!--联系人-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="联系人"
+                        android:textColor="@color/black_text"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_business_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:text="..."
+                        android:textColor="@color/gray_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_agree_or_refuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+
+            >
+
+
+            <TextView
+                android:id="@+id/tv_agreen_to_join"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_bg_change"
+                android:gravity="center"
+                android:text="同意"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_refuse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_vehicle_del_bg"
+                android:gravity="center"
+                android:text="拒绝"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/sv_business_driver_info"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/include_title_invite_detial_activity"-->
+        <!--android:scrollbars="none">-->
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+
+            <!--<include-->
+                <!--android:id="@+id/include_business_driver_head_about"-->
+                <!--layout="@layout/layout_business_driver_head_about"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--&lt;!&ndash;司机姓名相关&ndash;&gt;-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_business_info_about"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/include_business_driver_head_about"-->
+                <!--android:background="@color/bg_all"-->
+                <!--android:orientation="vertical">-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:paddingRight="10dp">-->
+
+
+                    <!--&lt;!&ndash;联系电话&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/ll_business_call"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="90dp"-->
+                            <!--android:layout_height="45dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:text="联系电话"-->
+                            <!--android:textColor="@color/black_text"-->
+                            <!--android:textSize="15sp" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_business_call"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--android:layout_marginLeft="50dp"-->
+                            <!--android:text="..."-->
+                            <!--android:textColor="@color/text_bule"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textStyle="bold"-->
+
+
+                            <!--/>-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/iv_contact_driver"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:textColor="@color/gray_color"-->
+                            <!--android:textSize="15sp" />-->
+
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0.5dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:background="@color/bg_all" />-->
+
+
+                    <!--&lt;!&ndash;企业地址&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="90dp"-->
+                            <!--android:layout_height="45dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:text="联系地址"-->
+                            <!--android:textColor="@color/black_text"-->
+                            <!--android:textSize="15sp" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_business_address"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--android:layout_marginLeft="50dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="..."-->
+                            <!--android:textColor="@color/gray_color"-->
+                            <!--android:textSize="15sp" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0.5dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:background="@color/bg_all" />-->
+
+
+                    <!--&lt;!&ndash;联系人&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="90dp"-->
+                            <!--android:layout_height="45dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:text="身份证号"-->
+                            <!--android:textColor="@color/black_text"-->
+                            <!--android:textSize="15sp" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_business_person"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--android:layout_marginLeft="50dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="..."-->
+                            <!--android:textColor="@color/gray_color"-->
+                            <!--android:textSize="15sp" />-->
+
+
+                    <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_agree_or_refuse"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_below="@id/ll_business_info_about"-->
+                <!--android:layout_marginTop="70dp"-->
+
+                <!--&gt;-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_agreen_to_join"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@drawable/login_bg_change"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="同意"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_refuse"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:background="@drawable/selector_vehicle_del_bg"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="拒绝"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+
+
+
+            <!--</LinearLayout>-->
+
+
+        <!--</RelativeLayout>-->
+
+    <!--</ScrollView>-->
+
+
+</RelativeLayout>

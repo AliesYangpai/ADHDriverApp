@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    android:orientation="vertical"
+    tools:context="com.adhdriver.work.ui.activity.driver.ChangeLoginPassActivity">
+
+
+    <!--title-->
+
+    <include
+        android:id="@+id/include_title_change_login_pass"
+        layout="@layout/title_bar_in_common_activity_right_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--登陆密码-->
+
+    <RelativeLayout
+        android:id="@+id/rl_to_change_loginpass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <EditText
+            android:id="@+id/et_old_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:digits="@string/pass_digest"
+            android:gravity="center_vertical"
+
+            android:hint="@string/enter_old_pass"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColor="@color/text_login"
+            android:textColorHint="@color/text_grays"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <!--登陆密码-->
+
+        <RelativeLayout
+            android:id="@+id/rl_new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <EditText
+                android:id="@+id/et_new_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:digits="@string/pass_digest"
+                android:gravity="center_vertical"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="@color/text_login"
+                android:textColorHint="@color/text_grays"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+        <!--分割线-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/bg_all" />
+
+
+        <!--提现密码-->
+        <RelativeLayout
+            android:id="@+id/rl_to_change_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <EditText
+                android:id="@+id/et_new_pass_again"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:digits="@string/pass_digest"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_new_pass_again"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="@color/text_login"
+                android:textColorHint="@color/text_grays"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--退出-->
+
+    <LinearLayout
+        android:id="@+id/ll_change_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_orange_bottom_button_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/text_finish"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rl_mine_head3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <!--钱包-->
+        <LinearLayout
+            android:id="@+id/ll_my_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_my_wallet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="钱包"
+                android:textColor="@color/text_login"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bgGray" />
+
+
+        <!--优惠券-->
+
+        <LinearLayout
+            android:id="@+id/ll_my_discount_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_discount_coupon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="优惠券"
+                android:textColor="@color/text_login"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bgGray" />
+
+        <!--积分-->
+
+        <LinearLayout
+            android:id="@+id/ll_my_integral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_my_integral" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="积分"
+                android:textColor="@color/text_login"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <!--&lt;!&ndash;钱包&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_my_wallet"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/white"-->
+        <!--android:button="@null"-->
+        <!--android:drawablePadding="-30dp"-->
+        <!--android:drawableTop="@drawable/img_my_wallet"-->
+        <!--android:gravity="center"-->
+        <!--android:text="钱包"-->
+        <!--android:textColor="@color/text_login"-->
+        <!--android:textSize="12sp" />-->
+        <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@color/bgGray"-->
+
+        <!--/>-->
+
+        <!--&lt;!&ndash;优惠券&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_my_discount_coupon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/white"-->
+        <!--android:button="@null"-->
+        <!--android:drawablePadding="-10dp"-->
+        <!--android:drawableTop="@drawable/img_discount_coupon"-->
+        <!--android:gravity="center"-->
+        <!--android:text="优惠券"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="@color/text_login" />-->
+
+        <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@color/bgGray"-->
+
+        <!--/>-->
+
+        <!--&lt;!&ndash;积分&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_my_integral"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/white"-->
+        <!--android:button="@null"-->
+        <!--android:drawablePadding="-10dp"-->
+        <!--android:drawableTop="@drawable/img_my_integral"-->
+        <!--android:gravity="center"-->
+        <!--android:text="积分"-->
+        <!--android:textColor="@color/text_login" />-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

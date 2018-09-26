@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    >
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/select_paypass_operate"
+            android:gravity="center"
+            android:textColor="@color/text_bule"
+            android:background="@color/white"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <!--零钱提现-->
+    <RelativeLayout
+        android:id="@+id/rl_deposit_way_change"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+
+        >
+
+
+        <TextView
+            android:id="@+id/tv_deposit_way_change"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="零钱提现"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_deposit_way_change"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@id/tv_deposit_way_change"
+            android:src="@drawable/test_img_deposit_change" />
+    </RelativeLayout>
+
+
+    <!--押金提现-->
+    <RelativeLayout
+        android:id="@+id/rl_deposit_way_cash_pledge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/tv_deposit_way_cash_pledge"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="押金提现"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_deposit_way_cash_pledge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:src="@drawable/test_img_deposit_cash_pledge"
+            android:layout_toLeftOf="@id/tv_deposit_way_cash_pledge"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

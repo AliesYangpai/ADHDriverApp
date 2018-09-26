@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.fragment.driver.main4.FragmentDriverOrders">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_fg_orders"
+        layout="@layout/common_title_in_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--中间四项-->
+
+    <include
+        android:id="@+id/include_order_state"
+        layout="@layout/layout_order_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_title_fg_orders" />
+
+    <!--底部的fragment-->
+    <FrameLayout
+        android:id="@+id/fragment_container_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_order_state"
+        android:layout_marginTop="0.5dp" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--大改前的版本-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="@color/bg_all"--><!--tools:context="com.adhdriver.work.fragment.driver.main4.FragmentDriverOrders"--><!--&gt;-->
+
+
+    <!--&lt;!&ndash;title&ndash;&gt;--><!--<include--><!--android:id="@+id/include_title_fg_orders"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--layout="@layout/common_title_in_fragment"--><!--android:layout_alignParentTop="true"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true" />-->
+
+
+    <!--<RelativeLayout--><!--android:id="@+id/ll_all_my_order"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical"--><!--android:gravity="center_horizontal"--><!--android:layout_below="@id/include_title_fg_orders"--><!--android:background="@drawable/img_orders_fg_bg"--><!--android:visibility="visible"--><!--&gt;-->
+
+
+    <!--<RelativeLayout-->
+
+    <!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentBottom="true"--><!--android:layout_marginBottom="50dp"--><!--&gt;-->
+
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical"--><!--android:layout_alignParentRight="true"--><!--android:gravity="right"--><!--&gt;-->
+
+    <!--<TextView--><!--android:id="@+id/tv_my_appoint"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/img_orders_tv_bg"--><!--android:layout_weight="1"--><!--android:text="我的指派"--><!--android:gravity="center"--><!--android:textSize="17sp"--><!--android:textColor="@color/white"--><!--android:visibility="gone"--><!--/>-->
+
+    <!--<TextView--><!--android:id="@+id/tv_my_grab"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/img_orders_tv_bg"--><!--android:layout_weight="1"--><!--android:layout_marginTop="10dp"--><!--android:text="我的抢单"--><!--android:gravity="center"--><!--android:textSize="17sp"--><!--android:textColor="@color/white"--><!--/>--><!--<TextView--><!--android:id="@+id/tv_my_bidding"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/img_orders_tv_bg"--><!--android:layout_weight="1"--><!--android:layout_marginTop="10dp"--><!--android:text="我的竞价"--><!--android:gravity="center"--><!--android:textSize="17sp"--><!--android:textColor="@color/white"--><!--/>--><!--</LinearLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</RelativeLayout>-->

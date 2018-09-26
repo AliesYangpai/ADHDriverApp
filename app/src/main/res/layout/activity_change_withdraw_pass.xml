@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.adhdriver.work.activity.driver.ChangeWithdrawPassActivity">
+
+
+
+    <!--title-->
+
+    <include
+        android:id="@+id/include_title_with_draw_pass_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_original_withdraw_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/include_title_with_draw_pass_change"
+
+        >
+
+        <TextView
+
+            android:id="@+id/tv_set_original"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="旧密码："
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.jungly.gridpasswordview.GridPasswordView
+
+
+            android:id="@+id/gpv_original_withdraw_pass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:gpvTextColor="@color/black"
+            app:gpvTextSize="17sp"
+            app:gpvLineColor="@color/gray_color"
+            app:gpvLineWidth="1dp"
+            app:gpvGridColor="#ffffff"
+            app:gpvPasswordLength="6"
+            app:gpvPasswordType="numberPassword"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_set_new_withdraw_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/ll_original_withdraw_pass"
+        >
+
+        <TextView
+            android:id="@+id/tv_set_new_pass_text"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="新密码："
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.jungly.gridpasswordview.GridPasswordView
+
+            android:id="@+id/gpv_set_new_withdraw_pass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:gpvTextColor="@color/black"
+            app:gpvTextSize="17sp"
+            app:gpvLineColor="@color/gray_color"
+            app:gpvLineWidth="1dp"
+            app:gpvGridColor="#ffffff"
+            app:gpvPasswordLength="6"
+            app:gpvPasswordType="numberPassword"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_set_new_withdraw_pass_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/ll_set_new_withdraw_pass"
+        >
+
+        <TextView
+            android:id="@+id/tv_set_new_pass_again"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="确认密码："
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.jungly.gridpasswordview.GridPasswordView
+
+            android:id="@+id/gpv_set_new_withdraw_pass_again"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:gpvTextColor="@color/black"
+            app:gpvTextSize="17sp"
+            app:gpvLineColor="@color/gray_color"
+            app:gpvLineWidth="1dp"
+            app:gpvGridColor="#ffffff"
+            app:gpvPasswordLength="6"
+            app:gpvPasswordType="numberPassword"
+            />
+
+    </LinearLayout>
+
+    <!--完成-->
+
+
+    <TextView
+        android:id="@+id/tv_withdraw_change_sure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_bg_change"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/text_finish"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        />
+
+</RelativeLayout>

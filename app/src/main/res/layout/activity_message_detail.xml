@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.ui.activity.driver.MessageDetailActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_msg_detail_activity"
+        layout="@layout/title_bar_in_common_activity_right_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/iv_msg_type"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/include_title_msg_detail_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+
+    <TextView
+        android:id="@+id/tv_msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_msg_type"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/gray_msg"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+        />
+
+
+</RelativeLayout>
+

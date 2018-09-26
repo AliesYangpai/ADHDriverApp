@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.fragment.driver.main4.FragmentDriverAct">
+
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_fg_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_fragment"/>
+
+
+
+
+    <!--下拉刷新布局-->
+    <com.adhdriver.work.widget.pullfresh.PullToRefreshLayout
+        android:id="@+id/refresh_Layout_in_fg_act"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title_fg_act"
+
+        >
+
+        <include
+            android:id="@+id/include_refresh_head"
+            layout="@layout/refresh_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <!--<com.adhdriver.work.widget.pullfresh.PullableListViewUpAndDown-->
+            <!--android:id="@+id/lv_act"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scrollbars="none"-->
+
+            <!--/>-->
+
+
+        <com.adhdriver.work.widget.pullfresh.PullableListViewUpAndDown
+            android:id="@+id/lv_act"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            />
+
+        <include layout="@layout/load_more" />
+
+    </com.adhdriver.work.widget.pullfresh.PullToRefreshLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.ui.activity.driver.CustomCenterActivity"
+    android:orientation="vertical">
+
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_info_customer_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar_in_common_activity_right_img"/>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@color/white"
+        >
+
+
+
+        <!--客服电话-->
+
+        <RelativeLayout
+            android:id="@+id/rl_call"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/tv_customer_call_text"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/img_customer_call"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_call_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tv_customer_call_text"
+                android:textColor="@color/black_text"
+                android:text="@string/custom_call"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <!--新浪微博-->
+        <RelativeLayout
+            android:id="@+id/rl_sina"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/tv_sina_wb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/img_sina_icon_adh"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tv_sina_wb"
+                android:textColor="@color/black_text"
+                android:text="@string/adh_wx_gzh_name"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <!--分割线-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/bg_all" />
+
+
+
+
+
+
+        <!--分割线-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/bg_all" />
+
+
+
+
+
+        <!--微信公众号-->
+        <RelativeLayout
+            android:id="@+id/rl_wx"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/tv_customer_web"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/img_sina_wx"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tv_customer_web"
+                android:textColor="@color/black_text"
+                android:text="@string/adh_wx_gzh_name"
+                />
+
+
+
+
+        </RelativeLayout>
+        <!--分割线-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/bg_all" />
+
+        <!--联系地址-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/tv_address_adh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/img_address_adh"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tv_address_adh"
+                android:textColor="@color/black_text"
+                android:text="@string/adh_address"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

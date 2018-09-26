@@ -1,0 +1,688 @@
+<resources>
+    <string name="app_name">爱带货司机端</string>
+    <string name="in_name">司机端</string>
+
+    <string name="aidaihuo">西安爱带货网络科技有限公司</string>
+
+
+    <!--下拉刷新相关-->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="feedback_my_addvice">我的建议:</string>
+
+    <string name="feedback_my_responde">我的反馈:</string>
+
+    <string name="text_bind">绑定</string>
+    <string name="in_loading">加载中...</string>
+
+
+    <string name="fg_driver_main">首页</string>
+    <string name="grab_a_single">听单</string>
+    <string name="bidding">竞价</string>
+    <string name="bidding_go">参与竞价</string>
+
+
+    <string name="bidding_go_single">竞</string>
+    <string name="take_it">接</string>
+    <string name="orders">订单</string>
+    <string name="act">活动</string>
+    <string name="mine">我的</string>
+
+
+    <string name="set_startOff_delay">设置出发时间</string>
+    <string name="have_not_get_contact">暂无联系方式</string>
+
+    <string name="not_sim_card">请安装sim卡</string>
+
+    <string name="enter_username_login">请输入用户名</string>
+    <string name="enter_password_login">请输入密码</string>
+    <string name="text_login">登录</string>
+    <string name="app_update_abord">跳过</string>
+
+    <string name="text_logout">退出</string>
+    <string name="text_next">下一步</string>
+    <string name="text_finish">完成</string>
+    <string name="text_start_test">开始答题</string>
+    <string name="text_submit">提交</string>
+    <string name="publish_it">发布</string>
+    <string name="refuel_to_petrol_station">导航至油站</string>
+
+    <string name="enter_phone_number">请输入手机号</string>
+
+
+    <string name="enter_confirm_code_to_finish">请补全验证码</string>
+
+
+    <string name="enter_new_pass">请输入新密码</string>
+    <string name="enter_new_pass_again">请再输入一次</string>
+
+    <string name="enter_reg_pass">请输入不少于8位的字母、数字组合密码</string>
+
+    <string name="register_driver">司机注册</string>
+    <string name="register_company">物流企业注册</string>
+    <string name="find_pass">找回密码</string>
+
+
+    <string name="driver_find_pass">司机找回密码</string>
+    <string name="business_find_pass">物流企业找回密码</string>
+
+    <string name="pic_error">请重新选择</string>
+
+
+    <string name="driver_qr">我的二维码</string>
+
+    <string name="reg_name">姓名</string>
+    <string name="reg_identify_id">身份证号码</string>
+    <string name="reg_bank_card">银行卡号码</string>
+    <string name="reg_inviter_code">邀请码</string>
+
+    <string name="enter_reg_info_name">请输入姓名</string>
+    <string name="enter_reg_identify_num">请输入身份证号</string>
+    <string name="enter_reg_bank_card">请输入银行卡号</string>
+    <string name="enter_not_have_to">选填</string>
+    <string name="reg_car_info_text">车辆信息</string>
+    <string name="reg_car_brand">请选择车辆品牌</string>
+
+
+    <string name="reg_car_name">请选择车辆名称</string>
+    <string name="reg_car_type">请选择车辆类型</string>
+
+
+    <string name="reg_car_specifaction">请选择车辆规格</string>
+    <string name="reg_car_capacity_input">请输入最载重量</string>
+    <string name="reg_car_volume_input">请输入最大体积</string>
+    <string name="reg_car_num">请输入车牌号码</string>
+
+    <string name="the_newst_version">已经是最新版本</string>
+    <string name="reg_upload_driverlicence">请上传驾驶证</string>
+
+    <string name="reg_upload_vechlelicence">请上传行驶证</string>
+
+    <string name="reg_upload_vechle_front">请上传车头照</string>
+
+
+    <string name="reg_upload_vechle_back">请上传车尾照</string>
+
+
+    <string name="reg_upload_driver_photo">请上传司机照片</string>
+
+    <string name="reg_upload_car_insurance_policy">请上传交强保险单</string>
+
+
+    <string name="reg_car_brand_text">车辆品牌</string>
+    <string name="reg_car_type_text">车辆类型</string>
+    <string name="reg_car_type_select_text">类型选择</string>
+    <string name="reg_car_specification_text">车辆规格</string>
+    <string name="reg_car_capacity">最大载重(kg)</string>
+    <string name="reg_car_volume">最大体积(m³)</string>
+    <string name="reg_car_id_num_text">车牌号码</string>
+
+    <string name="title_driver_info">填写司机信息</string>
+    <string name="title_commpany_info">填写物流企业信息</string>
+
+    <string name="my_orders">我的订单</string>
+    <string name="all_act">活动</string>
+
+    <string name="office_order_arrive">您已到达目的地，请等待拆包扫描。完成后订单自动结束</string>
+    <string name="wait_for_client_sure">等待确认</string>
+
+    <string name="wait_for_driver_price">待定</string>
+    <string name="the_Id">ID:</string>
+
+
+    <string name="change_withdraw_pass">修改提现密码</string>
+    <string name="grab">抢单</string>
+
+
+    <string name="can_not_reweight_in_bidding">竞价订单不能进行复称操作</string>
+
+    <string name="bidding_ing">竞价中</string>
+    <string name="bidding_failure">竞价失败</string>
+    <string name="bidding_close">竞价失效</string>  <!--from张盼钰将竞价结束改为竞价失效-->
+    <string name="bidding_success_title">竞价成功</string>
+    <string name="bidding_success_bottom_btn">竞价成功，前往拉货</string>
+
+    <string name="text_contact_shipper">联系发货人</string>
+    <string name="text_contact_receiver">联系收货人</string>
+
+    <string name="contact_shipper">点我联系发货人</string>
+    <string name="contact_receiver">点我联系收货人</string>
+    <string name="enter_legal_vehicle_num">请输入车牌号</string>
+
+    <string name="please_finish_vehicle_num">请完善车牌号</string>
+
+
+    <string name="reg_upload_pic_info">上传资质信息</string>
+
+    <string name="select_pic">请选图片</string>
+    <string name="tx_camera_text">相机</string>
+    <string name="tx_gallary">相册</string>
+    <string name="tx_cancel">取消</string>
+    <string name="read_learn">阅读学习</string>
+
+
+    <string name="online_exam">在线考试</string>
+
+
+    <string name="act_detial">活动详情</string>
+
+    <string name="bidding_participate">我参与的</string>
+
+
+    <string name="bidding_participate_result">竞价结果</string>
+
+    <string name="setting_vehicle_no">设置车牌号</string>
+
+    <string name="location_survey">位置概览</string>
+    <string name="custom_service">客服中心</string>
+    <string name="setting">设置</string>
+    <string name="forget_pay_pass">忘记支付密码</string>
+    <string name="reset_pay_pass">重置支付密码</string>
+
+    <string name="app_update">新版本更新</string>
+    <string name="app_update_info_text">更新内容：</string>
+    <string name="app_update_text">更新</string>
+
+    <string name="official_web">http://www.adaihuo.com/</string>
+    <string name="adh_wx_gzh_name">爱带货云物流</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="version_info">版本信息</string>
+    <string name="custom_call">400-032-0520</string>
+    <string name="input_userName">请输入用户名</string>
+    <string name="userName_legal">请输入合法电话号码</string>
+    <string name="input_passWord">请输入密码</string>
+    <string name="passWord_lenth">密码至少为8位</string>
+
+    <string name="passWord_type">密码必须为8-16位字母数字混合</string>
+    <string name="passWord_not_same">密码不一致</string>
+    <string name="input_confirmCode">请输入验证码</string>
+    <string name="input_phone">请输入电话号码</string>
+
+
+    <string name="company_name">请输入企业名称</string>
+
+    <string name="company_num">请输入企业联系方式</string>
+    <string name="company_address">请输入企业联系地址</string>
+
+
+    <string name="login_digest">0123456789</string>
+    <string name="pass_digest">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="extral_service">额外服务</string>
+
+    <string name="my_appoint">我的指派</string>
+    <string name="my_grab">我的抢单</string>
+    <string name="my_bidding">我的竞价</string>
+
+
+    <string name="driver_grab">司机抢单</string>
+    <string name="driver_bidding">司机竞价</string>
+
+
+    <string name="has_take_order">已接单</string>
+
+
+    <string name="take_goods">取货中</string>
+    <string name="change_weight">修改货物</string>
+    <string name="scattered">零担业务</string>
+    <string name="ordering">进行中</string>
+
+
+    <string name="enter_driver_name">请输入司机姓名</string>
+
+    <string name="visitor_mode">游客模式</string>
+
+    <string name="enter_legal_person_name">请输入法人姓名</string>
+
+    <string name="no_location_info">暂无经纬度信息</string>
+    <string name="enter_identifyId">请输入身份证号</string>
+    <string name="enter_legal_identifyId">请输入合法身份证号</string>
+
+
+    <string name="update_front_indentify_img">请上传身份证正面照片</string>
+    <string name="update_back_indentify_img">请上传身份证反面照片</string>
+
+    <string name="select_cartype">请选择车辆类型</string>
+
+    <string name="select_paypass_operate">请选择</string>
+
+
+    <string name="enter_max_capacity">请输入最大载重量</string>
+    <string name="not_0_capacity">最大载重不能为0</string>
+
+    <string name="enter_max_volume">请输入最大体积</string>
+    <string name="not_0_volume">最大体积不能为0</string>
+
+    <string name="change_pass">修改密码</string>
+    <string name="change_paypass">修改提现密码</string>
+    <string name="about_pass">密码相关</string>
+    <string name="enter_old_pass">请输入旧密码</string>
+
+
+    <string name="change_login_pass">修改登陆密码</string>
+    <string name="change_the_login_pass">修改登陆密码</string>
+    <string name="change_the_withdraw_pass">修改提现密码</string>
+
+    <string name="msg_list">消息列表</string>
+    <string name="user_protocol">用户协议</string>
+
+    <string name="offical">官网</string>
+    <string name="forget_paypass">忘记提现密码</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="set_withdraww_pass">设置提现密码</string>
+
+
+    <string name="enter_withdraw_pass">输入提现密码</string>
+    <string name="num_share">分享</string>
+    <string name="change_detial">零钱明细</string>
+
+    <string name="my_change">我的零钱</string>
+
+    <string name="change_account">零钱余额：</string>
+    <string name="cash_pledge_account">押金余额：</string>
+    <string name="the_get_money">金额(¥)</string>
+    <string name="currency_unit">¥</string>
+    <string name="top_up_recharge">充值</string>
+    <string name="withdraw_deposit">提现</string>
+    <string name="order_finish">已完成</string>
+    <string name="order_cancel">已取消</string>
+    <string name="order_refund">已退款</string>
+
+    <string name="ride_sharing_publish">发布顺风车</string>
+    <string name="publish_success">发布成功</string>
+
+    <string name="ride_sharing_publish_list">发布列表</string>
+
+    <string name="my_vehicles">我的车辆</string>
+
+    <string name="my_vehicle_detial">车辆详情</string>
+
+
+    <string name="driver_add_vehicle">添加车辆</string>
+
+
+    <string name="go_to_show_list">前往查看</string>
+    <string name="publish_success_content">恭喜您成功发布顺风车信息</string>
+    <string name="ordring_detial">订单详情</string>
+
+    <string name="adh_infor">西安爱带货网络科技有限公司，是一家新型的智慧物流服务平台，是基于大数据、云计算的线上物流资源整合发布、线下实体仓储配送、全程透明化的物流企业；同时还提供个性化定制版的物流软件研发服务。爱带货突破企业技术壁垒，将操作方便的互联网科技产品运用到整个物流体系中，让“物流在线化”成为现实，有效地提升了物流的运作效率和服务品质。</string>
+    <string name="bidding_price">输入您的竞价价格</string>
+
+
+    <string name="no_location_back">未定位出结果</string>
+
+    <string name="need_bargain">请议价</string>
+    <string name="fax_no">传真号码:</string>
+    <string name="insured">保价</string>
+
+
+    <string name="scan">扫码</string>
+
+    <string name="driver_pay">我来垫付</string>
+
+    <string name="wx_scan_qr">微信收款</string>
+    <string name="wx_scan_qr_pay_to_me">微信扫一扫，向我付款</string>
+
+
+    <string name="wx_withdraw">微信提现</string>
+    <string name="ali_withDraw">支付宝提现</string>
+
+    <string name="ali_scan_qr">支付宝收款</string>
+
+    <string name="ali_scan_qr_pay_to_me">支付宝扫一扫，向我付款</string>
+
+
+    <string name="permission_title">权限提醒</string>
+    <string name="permission_msg">您拒绝了我们必要的一些权限，将会导致应用某些功能无法使用，请在设置中授权！</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_sure">前往设置</string>
+
+
+    <string name="adh_address">陕西省西安市南三环雁翔路旺座曲江华商传媒集团6楼</string>
+
+    <string name="push_remind_bell_off">接单提醒:点击可关闭抢单提醒</string>
+
+
+    <string name="push_remind_bell_on">接单提醒:点击可打开抢单提醒</string>
+
+
+    <string name="push_remind_on">抢单提醒已打开</string>
+
+
+    <string name="push_remind_off">抢单提醒已关闭</string>
+
+
+    <string name="share_code">邀请码：</string>
+
+
+    <string name="goto_downLoad">点击下载爱带货司机端app</string>
+
+
+    <string name="the_previous_question">上一题</string>
+
+    <string name="the_next_question">下一题</string>
+
+    <string name="connect_error">网络链接异常</string>
+
+    <string name="server_error">服务器异常</string>
+
+    <string name="no_resource">未知资源</string>
+    <string name="line_feed">\n</string>
+
+    <string name="feed_back_contact">联系方式（必填）</string>
+
+    <string name="your_advice">请留下您的宝贵意见</string>
+
+    <string name="feed_thanks">感谢您的宝贵意见，爱带货全体员工祝您万事如意。</string>
+
+    <string name="I_know">我知道了</string>
+
+    <string name="enter_withdraw_money">请输入提现金额</string>
+
+
+    <string name="min_balance_not_0">提现金额不能为0元</string>
+
+
+    <string name="yuan">元</string>
+
+
+    <string name="min_balance">最低金额不能小于0.1元</string>
+
+
+    <string name="min_balance_1_one">最低金额不能小于1元</string>
+
+    <string name="the_withdraw_balance">金额</string>
+
+
+    <string name="can_not_withDraw">您的余额不足1元，无法进行提现</string>
+
+
+    <string name="can_not_cash_pledge_diposit">您的押金不足，无法进行提现</string>
+
+
+    <string name="no_volume">暂无体积</string>
+    <string name="no_weight">暂无重量</string>
+
+
+    <string name="bidding_alert">订单完成后，平台将收取您报价的5%手续费</string>
+    <string name="min_bidding_price">系统预估您的最低成本：</string>
+    <string name="min_bidding_price_stern">请您根据市场正常给货主报价</string>
+    <string name="enter_your_bidding_quote">请输入您的估价</string>
+
+
+    <string name="min_bidding_quote">您的估价不得低于最低估价</string>
+
+    <string name="null_bidding_quote">未计算出最低估价，请检查</string>
+
+
+    <string name="ton_unit">吨</string>
+    <string name="yuan_per_ton_unit">元/吨</string>
+    <string name="yuan_per_stere">元/m³</string>
+
+    <string name="liang_unit">辆</string>
+
+
+    <string name="hitchhike_publish_pendding">等待匹配</string>
+    <string name="hitchhike_publish_succeed">匹配成功</string>
+    <string name="hitchhike_publish_failed">匹配失败</string>
+    <string name="hitchhike_publish_canceled">已取消</string>
+    <string name="hitchhike_publish_complete">已完成</string>
+
+
+    <string name="my_cash_pledge">我的押金：</string>
+    <string name="change_deposit">零钱提现</string>
+    <string name="cash_pledge_deposit">押金提现</string>
+    <string name="driver_qr_text_alert">扫一扫，邀我加入企业</string>
+    <string name="driver_name_in_qr">司机姓名：</string>
+    <string name="driver_phone_text_in_qr">联系方式：</string>
+
+
+    <string name="role_of_driver">司机用户</string>
+
+
+    <string name="role_of_business">企业用户</string>
+    <string name="business_info_submit_success">企业信息提交成功</string>
+
+    <string name="validity_ing">您的信息正在审核中，请稍后</string>
+    <string name="validity_failed">信息审核失败，请重新上传</string>
+
+    <string name="validity_error">信息审核状态异常</string>
+
+    <string name="enter_corporation">请输入法人姓名</string>
+
+    <string name="enter_company_name">请输入企业名称</string>
+    <string name="enter_company_address">请输入企业地址</string>
+
+    <string name="upload_company_licence">请上传营业执照照片</string>
+
+    <string name="upload_company_door">请上传企业门口照</string>
+
+    <string name="upload_hand_grab_id_card">请上传手持身份证照片</string>
+
+
+    <string name="business_fg_main">首页</string>
+    <string name="business_fg_drivers">司机</string>
+    <string name="business_fg_drivers_order">司机订单</string>
+    <string name="business_driver_info">司机详情</string>
+
+
+    <string name="invite_business_info">邀请详情</string>
+
+    <string name="del_business_driver">删除</string>
+
+    <string name="invite_add_business_driver">邀请添加</string>
+
+    <string name="business_sweep_add_driver">扫一扫</string>
+
+    <string name="business_sweep_device_error">扫描器异常</string>
+
+
+    <string name="business_receive_jian">收件数</string>
+    <string name="business_receive_goods_weight">收货总重</string>
+    <string name="business_start_off_drivers">出发司机</string>
+    <string name="business_receive_goods_all_volume">货物总体积</string>
+    <string name="business_all_freight">总运费</string>
+    <string name="business_all_income">总收入</string>
+
+    <string name="business_select_data">日期选择</string>
+
+
+    <string name="business_select_date_spot">请选择日期节点</string>
+    <string name="business_select_another_spot">请选择另一日期节点</string>
+
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+
+    <string name="set_node">设置节点</string>
+
+    <string name="today_data">今日数据</string>
+
+    <string name="node_date">节点数据</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+
+    <string name="publish_alert">订单完成后，将在您的报价金额中收取相应的信息费用</string>
+
+
+    <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&最新写入&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+    <string name="bidding_success_alert">恭喜您已成功参与竞价，请到我参与的中查看竞价结果</string>
+    <string name="grab_success_alert">   恭喜您抢单成功，请到订单列表中查看该单</string>
+
+    <string name="i_know">我知道了</string>
+    <string name="sure">确认</string>
+    <string name="cancel">取消</string>
+
+    <string name="enter_old_deposit_pass">请输入原提现密码</string>
+    <string name="enter_new_deposit_pass">请输入新密码</string>
+    <string name="deposit_pass_6">提现密码为6位</string>
+    <string name="enter_again">请在输入一次</string>
+    <string name="pass_not_same">两次密码不一致</string>
+    <string name="enter_confirm_code">请输入验证码</string>
+
+
+    <string name="forget_deposit_pass">忘记提现密码</string>
+
+
+    <string name="enter_identify">请输入身份证号码后4位</string>
+    <string name="enter_finish_identify">请补全身份证号码后4位</string>
+    <string name="enter_withdraw_pass_please">请输入提现密码</string>
+    <string name="withdraw_pass_6_lenth">提现密码为6位</string>
+    <string name="not_same_pass">两次密码不一致</string>
+
+
+    <string name="depositpass_success_reset">提现密码已重置</string>
+
+    <string name="reset_deposit_pass">重置提现密码</string>
+    <string name="adh_text">爱带货</string>
+
+    <string name="auth_bind">授权绑定</string>
+
+    <string name="not_third_bind">未绑定</string>
+    <string name="has_third_bind">已绑定</string>
+
+
+    <string name="has_qq_bind">QQ已绑定</string>
+    <string name="has_wx_bind">微信已绑定</string>
+
+
+    <string name="set_depart_time">请设置出发时间</string>
+    <string name="set_depart_place">请设置出发地点</string>
+    <string name="set_destination_place">请设置终点</string>
+
+    <string name="cancel_this_hitchhik">确认取消本条顺风路线吗？</string>
+
+    <string name="identify_info_checking">您的身份信息正在审核中，请稍后</string>
+    <string name="identify_info_deny">您的身份信息审核失败，请重新上传相关信息</string>
+
+    <string name="vehicle_info_deny">您的车辆信息审核失败，请重新上传相关信息</string>
+    <string name="vehicle_info_checking">您的车辆信息正在审核中，请稍后</string>
+
+    <string name="upload_fail">上传失败</string>
+    <string name="upload_success">上传成功</string>
+
+
+    <string name="enter_vehicle_info">车辆信息填写</string>
+
+
+    <string name="journey">行程</string>
+    <string name="wallet">钱包</string>
+    <string name="coupon">优惠券</string>
+
+    <string name="grade">信用分</string>
+    <string name="mgr_car">车辆管理</string>
+    <string name="refueling">一键加油</string>
+    <string name="invite_friend">邀请好友</string>
+    <string name="customer_service">客服中心</string>
+
+
+    <string name="mode_all">全部</string>
+    <string name="mode_same_city">同城</string>
+    <string name="mode_across_city">跨城</string>
+
+
+    <string name="enter_bidding_price">输入竞价金额</string>
+    <string name="cancel_bidding">取消竞价</string>
+    <string name="come_to_refuel">一键加油</string>
+    <string name="sure_to_quick_refuel">确认退出加油吗？</string>
+    <string name="null_for_your_lat">未获取到您当前的纬度</string>
+    <string name="null_for_your_lnt">未获取到您当前的经度</string>
+
+    <string name="null_for_gas_station_lat">未获取到油站的纬度</string>
+    <string name="null_for_gas_station_lnt">未获取到油站的经度</string>
+
+    <string name="null_for_amap_location">暂无经纬度信息</string>
+
+    <string name="distance">距离：</string>
+    <string name="today">今日</string>
+
+    <string name="gathering_text">点击收款渠道生成收款二维码扫码进行支付交易</string>
+
+    <string name="click_to_bidding">立即竞价</string>
+    <string name="click_to_grab">立即接单</string>
+
+    <string name="good_reputation">好评</string>
+    <string name="soso_reputation">中评</string>
+
+    <string name="bad_reputation">差评</string>
+
+
+    <string name="service">服务：</string>
+    <string name="behavior">行为：</string>
+    <string name="communicate">沟通：</string>
+    <string name="keep_agreement">履约：</string>
+
+    <string name="security_describe">尊重别人，礼貌待人有助于提升您的服务值</string>
+    <string name="behavior_describe">您的下单、消费、评价、邀请等活动会影响您的行为值</string>
+    <string name="conmmunicate_describe">偶尔的倾听与询问会提升您的沟通值</string>
+    <string name="keep_agreement_describe">按时接单送货会提升您的履约值</string>
+    <string name="wallet_balance">账户余额（元）</string>
+    <string name="change_deposit_account">提现账户变更</string>
+    <string name="deposit_now">立即提现</string>
+    <string name="recharge_now">立即充值</string>
+    <string name="change_now">立即变更</string>
+
+    <string name="go_to_set">前往设置</string>
+    <string name="do_next_time">下次再说</string>
+    <string name="had_not_set_deposit_pass">您还没有设置支付密码</string>
+
+    <string name="please_load_ali_app">请安装支付宝客户端</string>
+    <string name="fail_to_wx_recharge">微信充值失败</string>
+
+    <string name="do_change_deposit_account">账户变更</string>
+
+    <string name="add_new_vehicle">新增车辆</string>
+    <string name="current_vehicle">当前车辆</string>
+    <string name="validity_wait">预计24小时内将通过审核，请车主耐心等待</string>
+
+    <string name="change_vehicle">更换车辆</string>
+
+    <string name="del_vehicle">删除车辆</string>
+
+    <string name="edit_vehicle_info">修改车辆信息</string>
+
+    <string name="edit_vehicle_detial">编辑车辆信息</string>
+    <string name="del_vehicle_success">车辆删除成功</string>
+
+
+    <string name="order_has_been_assign">订单已被其他司机获得</string>
+
+    <string name="synthesize_score">综合评分</string>
+
+    <string name="vehicle_dipatch">点击出车</string>
+
+    <string name="vehicle_close">点击收车</string>
+
+    <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&以下是相关测试数据&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+    <string name="test_wenzi1">阿森纳于1886年由一群在东南伦敦伍尔维奇地区的戴尔广场（Dial Square）一家名为“皇家阿森纳”的武器制造所的工人所成立，初时按地区命名为“戴尔广场”（Dial Square）。第一场比赛是在1886年12月11日进行的，球队以6-0大胜东方流浪者队。1886年12月25日圣诞日，球队易名为“皇家阿森纳”（Royal Arsenal）。最初，皇家阿森纳队一直在各处进行友谊比赛，或者参加地方性的杯赛。1891年，俱乐部完成了改革，成为了职业俱乐部，并再一次改名为“伍尔维奇阿森纳”(Woolwich Arsenal)，1893年，球队加入了足球联盟的联赛，成为了一支乙级球队。在1913年的时候，阿森纳俱乐部搬迁进入海布里球场，并且在这里一呆就是93年，并在随后正式改名为阿森纳。
+在第一次世界大战之后，足球联盟将甲级联赛进行了扩军，经过投票表决，将阿森纳升入了甲级，自从那时候起，阿森纳一直保持在英格兰的顶级联赛中，成为了唯一一支从来没有降过级的球队。</string>
+
+
+    <string name="test_wenzi2">1.阿森纳于1886年由一群在东南伦敦伍尔维奇地区的戴尔广场（Dial Square）一家名为“皇家阿森纳”的武器制造所的工人所成立？球联盟将甲级联赛进行了扩军，经过投票表决，将阿森纳升入了甲级，自从那时候起，阿森纳一直保持在英格兰的顶级联赛中，成为了球联盟将甲级联赛进行了扩军，经过投票表决，将阿森纳升入了甲级，自从那时候起，阿森纳一直保持在英格兰的顶级联赛中，成为了</string>
+
+    <string name="test_wenzi3">阿森纳于1886年由一群在东南伦敦伍尔维奇地区的戴尔广场（Dial Square）一家名为“皇家阿森纳”的武器制造所的工人所成？</string>
+    <string name="test_a">A、是，以免用户不用车，白跑一趟</string>
+    <string name="test_b">B、不用联系直接去</string>
+    <string name="test_c">C、爱戴货的奖励</string>
+
+    <string name="test_appUpdate"> 1.增加了钱包功能啊实打实大\n 2.增加了提现功能阿\n 3.修复了卡顿问题\n 4.修复了卡顿问题\n 5.修复了卡顿问题\n 6.修复了卡顿问题\n 7.修复了卡顿问题\n 8.修复了卡顿问题\n </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

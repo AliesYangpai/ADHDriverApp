@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_order_not_take_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+
+
+        <!--货物名称xxxxxx-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <!--订单编号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="订单编号"
+                    android:textSize="15sp"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_order_num_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:gravity="right"
+                    android:text="2015112236e563"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+
+            <!--用车时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="用车时间"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_car_use_time_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="14:20"
+                    android:textColor="@color/grayOff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <!--货运类型-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="货运类型"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_car_type_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="顺风车"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+            <!--货物名称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="货物名称"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_goods_name_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="好多台电视机"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+
+
+            <!--始发地-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="始发地"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_start_place_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="西安"
+                    android:textColor="@color/grayOff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <!--发货人-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="发货人"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_start_shipper_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="张西瓜"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+            <!--发货人电话-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="发货人电话"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_shipper_num_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="13522584669"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+
+            <!--目的地-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="目的地"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_destination_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="咸阳"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+
+
+
+            <!--收货人-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="收货人"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_consignee_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="李黄瓜"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+            <!--收货人电话-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="收货人电话"
+                    android:textColor="@color/grayOff"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_consignee_num_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="16522325569"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+
+
+
+            <!--载重量-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:text="载重量"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_heavy_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="1000kg/m³"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+
+
+            <!--运费-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="运费"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_freight_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="8000元"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+
+
+            <!--备注-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="备注"
+                    android:textColor="@color/grayOff" />
+
+
+                <TextView
+                    android:id="@+id/tv_remark_in_take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="奥斯卡等级阿里是看得见肯德基爱上了肯德基拉上看到"
+                    android:textColor="@color/grayOff" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

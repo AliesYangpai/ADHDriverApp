@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.fragment.driver.main4.FragmentDriverMain">
+
+
+
+
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_fg_grab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_fragment"/>
+
+
+    <RadioGroup
+        android:id="@+id/ll_grab_all"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/include_title_fg_grab"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_grab_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="同城"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_top_rb_bg"
+            />
+
+
+        <RadioButton
+            android:id="@+id/rb_less_than_carload"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_top_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="零担"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <RadioButton
+            android:id="@+id/rb_bidding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="整车"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_top_rb_bg"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_overoffice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="营业部"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_top_rb_bg"
+            />
+
+
+
+
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_grab_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_grab_all"
+        android:layout_marginTop="0.5dp"
+        />
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boom_order_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:src="@drawable/img_control" />
+
+
+</RelativeLayout>

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adhdriver.work">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 这个权限用于允许程序在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 用于分享 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" /> <!-- 用于分享 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 用于扫码 -->
+    <!-- 用于分享 -->
+    <application
+        android:name=".AiDaiHuoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppADHTheme">
+
+        <!-- 高德地图的key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="229b3db1f68ba354a4bd95bd73450e36" />
+
+        <!-- 友盟 配置Appkey和Secret  仍然有用，需要用到友盟分析 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="591d88cc07fe6522ee000932" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="e6419908100fe35f8bb08e0c61dc65b9" />
+
+        <!-- 友盟配置渠道ID 暂时不管 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+
+        <!-- 阿里云推送 -->
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="24616729" /> <!-- 请填写你自己的- appKey -->
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="6897d2464dbc7cf58d2b0dc07e7936a5" /> <!-- 请填写你自己的appSecret -->
+
+
+        <!-- QQ授权登陆回调 -->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106253080" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信授权登陆回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/wxPageStyle" />
+
+        <!-- 分享所需要的activity -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" /> <!-- 这里应该填入腾讯开放平台上面的 APP Id -->
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="cn.sharesdk.demo.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付回调 -->
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <!-- 支付宝回调 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <!-- 阿里云推送的reciver -->
+
+
+        <!-- 消息接收监听器 （用户可自主扩展） -->
+        <receiver
+            android:name=".receiver.AliPushReceiver"
+            android:exported="false"> <!-- 为保证receiver安全，建议设置不可导出，如需对其他应用开放可通过android：permission进行限制 -->
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 高德定位服务 -->
+        <service android:name="com.amap.api.location.APSService" /> <!-- 定位服务 -->
+
+        <activity
+            android:name=".ui.activity.common.FirstEnterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.driver.MainDriverActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.common.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.UserProtocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.CustomCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.common.VersionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.common.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.ChangeLoginPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.DepositPassChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.DepositPassForgetToGetCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.DepositPassForgetToResetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.ThirdAuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.PublishRouteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.PublishSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.PublishRoutesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.common.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.InfoRegDriverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.InRegDriverVehicleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.VehicleNoSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.ReadLearnActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 备注掉的相关信息后面会用到 -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".activity.ShareActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.OrderDetailTakeGoodsActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.SearchPlaceActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.OrderDetailWeightActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.push.PushHanderActivity" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.PublishScatteredActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.ScanPayActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.VehicleNoSettingActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.OrderDetailCancelActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.OfficialWebsiteActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.PulishListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".activity.FeedBackActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.PublishSuccessActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.WithdrawDepositActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.WithDrawPassSettingActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.ChangeWithdrawPassActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.ForgetWithDrawToGetCodeActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.WithDrawPassForgetToSetActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.BiddingParticipateListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.OrderDetailBiddingParticipateActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.OrderDetailMatchHitchhikActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.VehicleListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.VehicleDetailActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.VehicleAddActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.DriverQRActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessMainActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessSettingActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessChangeLoginPassActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessDriverDetialActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessScanAddDriverActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessOrderStateActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessOrderDetailTakeActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessOrderDetailTakeGoodsActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessOrderDetailingActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessOrderDetailingOpenActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessOrderFinishActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- <service -->
+        <!-- android:name=".service.business.ServiceBusinessOrdering" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessMyWalletActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessChangeDetailListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessWithDrawPassSettingActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessWithdrawDepositActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessChangeWithdrawPassActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessForgetWithDrawToGetCodeActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.business.BusinessWithDrawPassForgetToSetActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.InviteDetialActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.VehicleEditActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.kick.KickOutActivity" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/Transparent" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.AuthLoginActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.AuthAccountOrNotActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.AuthRegActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.MsgDetailActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.ThirdBindInAppActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".activity.driver.RefuelNavigateActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".ui.activity.driver.RefuelActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.ServiceWatch1"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.ServiceWatch2"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".receiver.AlarmBroadCastReciver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".receiver.BootBroadCastReciver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="anction_awake_watch1" />
+                <action android:name="anction_awake_watch2" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.activity.push.AlertDialogActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".ui.activity.driver.OrderTakeDetailActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ui.activity.driver.OrderDetailNotTakeBiddingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.OrderDetailNotTakeOverOfficeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.OrderTakeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.DriverCreditScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.MyWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.MyWalletInfosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.DepositPassSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.DepositWithDrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.DepositPassEnterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.VehiclesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.VehicleDetialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.VehicleAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.VehicleEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.RegPhonePassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.ExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.kick.KickOutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".ui.activity.driver.OrderTakeDetailFinishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.OrderTakeDetailCancelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.OrderTakeDetailRefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.RefuelNavigateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.driver.ScanPayActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

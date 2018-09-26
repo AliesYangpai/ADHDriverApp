@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.ui.activity.driver.PublishRouteActivity">
+
+
+    <!--title-->
+
+    <include
+        android:id="@+id/include_title_publish_route"
+        layout="@layout/common_title_in_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--起始当前时间-->
+
+    <RelativeLayout
+        android:id="@+id/rl_set_current_time"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/include_title_publish_route"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_publish_current_time" />
+
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_time"
+            android:gravity="center_vertical"
+            android:hint="@string/set_startOff_delay"
+            android:textColor="@color/text_login"
+            android:textColorHint="@color/text_login" />
+
+
+    </RelativeLayout>
+
+
+    <!--当前位置和终点-->
+
+
+    <!--起始和终止地方-->
+    <LinearLayout
+        android:id="@+id/ll_start_and_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_set_current_time"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <!--起始地点-->
+
+        <RelativeLayout
+            android:id="@+id/rl_set_start_place"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <ImageView
+                android:id="@+id/iv_start_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_start_place" />
+
+
+            <TextView
+                android:id="@+id/tv_set_start_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_start_place"
+                android:gravity="center_vertical"
+                android:hint="设置起点"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_login"
+                android:textColorHint="@color/text_login" />
+
+
+        </RelativeLayout>
+
+
+        <!--分割线-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/bg_all" />
+
+
+        <!--设置终点-->
+        <RelativeLayout
+            android:id="@+id/rl_set_end_place"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <ImageView
+                android:id="@+id/iv_end_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_end_place" />
+
+            <TextView
+                android:id="@+id/tv_set_end_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_end_place"
+                android:gravity="center_vertical"
+                android:hint="设置终点"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_login"
+                android:textColorHint="@color/text_login"
+
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_publish_fee_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_start_and_end"
+        android:layout_marginTop="10dp"
+        android:gravity="center|right"
+        android:paddingRight="10dp"
+        android:text="@string/publish_alert"
+        android:textColor="@color/red"
+        android:textSize="12sp" />
+
+
+    <!--点击下一步-->
+
+
+    <TextView
+        android:id="@+id/tv_publish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/selectot_blue_drawable_click"
+        android:gravity="center"
+        android:text="@string/publish_it"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
+
+
+

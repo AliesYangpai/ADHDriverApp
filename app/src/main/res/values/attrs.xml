@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // SIMPLE_ARC,COMPLETE_ARC,SIMPLE_ARC_DIALOG,COMPLETE_ARC_DIALOG
+
+    <declare-styleable name="SimpleArcLoader">
+
+        <attr name="arc_style" format="enum">
+            <enum name="simple_arc" value="0"></enum>
+            <enum name="complete_arc" value="1"></enum>
+        </attr>
+
+        <attr name="arc_margin" format="dimension"/>
+        <attr name="arc_thickness" format="dimension"/>
+
+        <attr name="arc_speed" format="enum">
+            <enum name="slow" value="0"></enum>
+            <enum name="medium" value="1"></enum>
+            <enum name="fast" value="2"></enum>
+        </attr>
+
+        <attr name="arc_colors" format="reference"></attr>
+
+    </declare-styleable>
+
+
+
+
+
+
+
+
+
+
+    <declare-styleable name="RangeSliderView">
+        <attr name="rangeCount" format="integer"/>
+        <attr name="filledColor" format="color"/>
+        <attr name="emptyColor" format="color"/>
+        <attr name="barHeightPercent" format="float"/>
+        <attr name="slotRadiusPercent" format="float"/>
+        <attr name="sliderRadiusPercent" format="float"/>
+    </declare-styleable>
+
+
+
+
+
+    <declare-styleable name="CircleTextProgressbar">
+        <attr name="in_circle_color" format="color" />
+    </declare-styleable>
+
+
+
+    <!-- 自定义星星属性 -->
+    <declare-styleable name="star">
+        //星星数量
+        <attr format="integer" name="starsNum"></attr>
+        //星星宽度
+        <attr format="dimension" name="starWidth"></attr>
+        //星星高度
+        <attr format="dimension" name="starHeight"></attr>
+        //星星间距
+        <attr format="dimension" name="starDistance"></attr>
+        //星星背景
+        <attr format="reference" name="starBackground"></attr>
+        //星星变化背景
+        <attr format="reference" name="starDrawBackground"></attr>
+        //控件是否可以点击
+        <attr format="boolean" name="starClickable"></attr>
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CountDownProgress">
+
+        <!-- 默认圆实心的颜色 -->
+        <attr name="default_circle_solide_color" format="color"/>
+        <!-- 默认圆边框的颜色 -->
+        <attr name="default_circle_stroke_color" format="color"/>
+        <!-- 默认圆边框的宽度 -->
+        <attr name="default_circle_stroke_width" format="dimension"/>
+        <!-- 默认圆的半径 -->
+        <attr name="default_circle_radius" format="dimension"/>
+        <!-- 进度条的颜色 -->
+        <attr name="progress_color" format="color"/>
+        <!-- 进度条的宽度 -->
+        <attr name="progress_width" format="dimension"/>
+        <!-- 小圆的实心颜色 -->
+        <attr name="small_circle_solide_color" format="color"/>
+        <!-- 小圆的边框颜色 -->
+        <attr name="small_circle_stroke_color" format="color"/>
+        <!-- 小圆的边框宽度 -->
+        <attr name="small_circle_stroke_width" format="dimension"/>
+        <!-- 小圆的半径 -->
+        <attr name="small_circle_radius" format="dimension"/>
+        <!-- 文字的颜色 -->
+        <attr name="text_color" format="color"/>
+        <!-- 文字的字体大小 -->
+        <attr name="text_size" format="dimension"/>
+    </declare-styleable>
+
+
+
+
+
+    <declare-styleable name="RadarChartView">
+        <attr name="bgColor" format="color"></attr>
+        <attr name="dotColor" format="color"></attr>
+        <attr name="dotVisiable" format="boolean"></attr>
+        <attr name="dataAreaColor" format="color"></attr>
+        <attr name="griddingColor" format="color"></attr>
+        <attr name="valueStrokeColor" format="color"></attr>
+        <attr name="griddingVisiable" format="boolean"></attr>
+        <attr name="dotRadius" format="dimension"></attr>
+        <attr name="textSzie" format="dimension"></attr>
+        <attr name="textSpacing" format="dimension"></attr>
+        <attr name="axisNumb" format="integer"></attr>
+        <attr name="axisMax" format="float"></attr>
+        <attr name="textColor" format="color"></attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="SwipeButton">
+        <attr name="inner_text" format="string"/>
+        <attr name="inner_text_color" format="color"/>
+        <attr name="inner_text_size" format="dimension"/>
+        <attr name="inner_text_left_padding" format="dimension"/>
+        <attr name="inner_text_right_padding" format="dimension"/>
+        <attr name="inner_text_top_padding" format="dimension"/>
+        <attr name="inner_text_bottom_padding" format="dimension"/>
+        <attr name="inner_text_background" format="reference"/>
+        <attr name="button_image_width" format="dimension"/>
+        <attr name="button_image_height" format="dimension"/>
+        <attr name="button_trail_enabled" format="boolean"/>
+        <attr name="button_trail_drawable" format="reference"/>
+        <attr name="button_image_disabled" format="reference"/>
+        <attr name="button_image_enabled" format="reference"/>
+        <attr name="button_left_padding" format="dimension"/>
+        <attr name="button_right_padding" format="dimension"/>
+        <attr name="button_top_padding" format="dimension"/>
+        <attr name="button_bottom_padding" format="dimension"/>
+        <attr name="button_background" format="reference"/>
+        <attr name="has_activate_state" format="boolean"/>
+        <attr name="initial_state" format="enum">
+            <enum name="enabled" value="0"/>
+            <enum name="disabled" value="1"/>
+        </attr>
+
+
+    </declare-styleable>
+
+
+
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context="com.adhdriver.work.ui.activity.driver.VehicleNoSettingActivity">
+
+
+<!--title-->
+<include
+    android:id="@+id/include_title_set_vehicle_no"
+    layout="@layout/title_bar_in_common_activity_right_img"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+<LinearLayout
+    android:id="@+id/ll_num_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:layout_below="@id/include_title_set_vehicle_no"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请设置您的真实有效车牌"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
+
+
+<include
+    android:id="@+id/include_vehicle_num"
+    layout="@layout/layout_vehicle_no_et"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll_num_edit"
+    />
+
+<RelativeLayout
+    android:id="@+id/rl_keboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/include_vehicle_num"
+    >
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F0EFF4"
+        android:focusable="true"
+        android:shadowColor="#ffffff"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/button_grayborder_whiteground"
+        android:keyTextColor="#5E5E5E"
+        android:keyTextSize="16sp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+

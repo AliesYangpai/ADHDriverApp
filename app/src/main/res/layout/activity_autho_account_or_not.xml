@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.adhdriver.work.activity.AuthAccountOrNotActivity">
+
+
+
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_auth_account_select_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/include_title_auth_account_select_activity"
+        android:gravity="center"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_default_client_head"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="肌肉"
+            android:textColor="@color/black_text"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tv_no_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="没有账号？"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_recharge_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_has_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="已有账号"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_recharge_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
